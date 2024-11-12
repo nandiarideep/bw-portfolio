@@ -5,14 +5,14 @@ import MarqueeTools from '../components/Marquee/MarqueeTools'
 
 const Technologies = () => {
   return (
-    <div className='mx-14 mt-2 h-[90vh]'>
+    <div className='mx-14 mt-2 h-[95vh]'>
         <div className='flex gap-2 h-full'>
 
             {/* Top Section */}
             <div className='w-full h-[80%] relative'>
                 <h1 className='text-[5rem] capitalize font-semibold'>Technologies</h1>
                 <MarqueeTech />
-                <div className='flex flex-col mt-10 w-full relative'>
+                <div className='flex flex-col mt-5 w-full relative'>
                   <MarqueeTools />
                   <h1 className='text-[4rem] font-semibold items-end absolute -bottom-[90px] right-0'>Tools Used</h1>
                 </div>
