@@ -4,7 +4,7 @@ import { RxArrowTopRight } from "react-icons/rx";
 
 const Navbar = () => {
   return (
-    <nav className='w-full h-16 flex justify-between'>
+    <nav className='w-full h-16 flex justify-between sticky top-0 bg-white z-20'>
       <ul className='flex mx-14 gap-5 items-center'>
         <li>
           <NavLink 
@@ -38,7 +38,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink 
-            to='/services' 
+            to='/projects' 
             className={({ isActive }) => 
               `capitalize text-xl font-semibold cursor-pointer hover:text-[#222222] transition-all duration-300 ${isActive ? 'text-[#222222]' : 'text-[#7B7B7B]'}`
             }
