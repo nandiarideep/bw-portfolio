@@ -1,11 +1,11 @@
 import React from 'react'
-import { FaArrowDown } from 'react-icons/fa'
+import { MdOutlineKeyboardDoubleArrowDown } from 'react-icons/md'
 import MarqueeTech from '../components/Marquee/MarqueeTech'
 import MarqueeTools from '../components/Marquee/MarqueeTools'
 
 const Technologies = () => {
   return (
-    <div className='mx-14 mt-2 h-[95vh]'>
+    <div className='mx-14 mt-8 h-[95vh]'>
         <div className='flex gap-2 h-full'>
 
             {/* Top Section */}
@@ -16,10 +16,12 @@ const Technologies = () => {
                   <MarqueeTools />
                   <h1 className='text-[4rem] font-semibold items-end absolute -bottom-[90px] right-0'>Tools Used</h1>
                 </div>
-                <h3 className='absolute right-0 -bottom-[100px] flex text-[1.5rem] gap-1 items-center cursor-pointer hover:text-black text-[#7B7B7B] font-semibold duration-300 ease-in-out transition-all'>
+                <h3 className='absolute right-0 -bottom-[100px] flex text-[1.5rem] gap-1 items-center cursor-pointer hover:text-black text-[#7B7B7B] font-semibold duration-300 ease-in-out transition-all'
+                  link='/projects'
+                >
                   Further
-                  <FaArrowDown />
-                </h3>
+                  <MdOutlineKeyboardDoubleArrowDown className='text-[2rem] animate-slide-down' />
+                  </h3>
             </div>
         </div>
     </div>

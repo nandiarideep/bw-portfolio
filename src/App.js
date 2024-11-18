@@ -4,6 +4,8 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
 import Technologies from './pages/Technologies'
+import Projects from './pages/Projects'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -13,7 +15,9 @@ const App = () => {
           <Home />
           <About />
           <Technologies />
+          <Projects />
         </div>
+        <Footer />
       </div>
   )
 }

@@ -31,14 +31,14 @@ const Navbar = () => {
     ));
 
   return (
-    <div className="relative mx-14 flex items-center">
+    <div className="relative flex items-center">
       {/* Desktop Nav Links */}
-      <ul className="hidden md:flex gap-5 items-center md:py-5 fixed top-0 bg-[#F8F8F8] w-full z-40">
+      <ul className="hidden md:flex gap-5 items-center md:py-5 fixed top-0 bg-[#F8F8F8] w-full z-40 mx-14">
         {renderNavLinks()}
       </ul>
 
       {/* Mobile Menu Icon */}
-      <div className="md:hidden ml-auto my-5">
+      <div className="md:hidden static ml-auto my-5 mx-14">
         <FaBars
           className={`text-2xl cursor-pointer text-[#7B7B7B] hover:text-black duration-300 transition-all ease-in-out ${
             isMenuOpen ? 'rotate-180' : 'rotate-0'
